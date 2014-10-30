@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.easyfileshare"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-sdk
+        android:minSdkVersion="14"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.easyfileshare.FileShare"
+            android:label="@string/app_name"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.easyfileshare.ConnectingThread"
+            android:label="@string/app_name"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.easyfileshare.AcceptConnections"
+            android:label="@string/app_name"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.easyfileshare.SelectUserActivity"
+            android:label="@string/user"
+            android:theme="@android:style/Theme.Dialog"
+            android:configChanges="orientation|screenSize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.easyfileshare.SelectServerActivity"
+            android:label="@string/title_activity_select_server"
+            android:theme="@android:style/Theme.Dialog"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+    </application>
+
+</manifest>

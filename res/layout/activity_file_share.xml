@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   	android:divider="@drawable/ic_launcher"
+   	android:baselineAligned="false"
+   	android:background="@color/white"
+    tools:context=".FileShare" >
+
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="@color/white"
+         android:orientation="horizontal" >
+
+         <ImageButton
+             android:id="@+id/upImage"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="@color/white"
+             android:contentDescription="@string/go_up"
+             android:src="@drawable/back" />
+
+         <TextView
+             android:id="@+id/pathText"
+             android:layout_toRightOf="@id/upImage"
+             android:layout_marginTop="20dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_vertical"
+             android:layout_marginLeft="5dp"
+             android:textColor="@color/blue"
+             android:textSize="30sp"
+             android:textStyle="italic" />
+
+         <ImageButton
+             android:id="@+id/reloadImage"
+             android:layout_width="wrap_content"
+             android:layout_height="75dp"
+             android:layout_alignParentRight="true"
+             android:layout_alignParentTop="true"
+             android:layout_marginRight="0dp"
+             android:background="@color/white"
+             android:contentDescription="@string/reload"
+             android:src="@drawable/reload" />
+
+     </RelativeLayout>
+    
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:weightSum="2"
+         android:baselineAligned="true"
+         android:background="@color/white"
+         android:orientation="horizontal" >
+
+		    <LinearLayout
+		        android:id="@+id/sourceLayout"
+		        android:layout_width="0dp"
+		        android:layout_height="match_parent"
+		        android:background="@color/white"
+		        android:layout_weight="1"
+		        android:orientation="vertical" >
+		
+				<ListView
+				    android:id="@+id/sdCardList"
+				    android:layout_width="wrap_content"
+				    android:layout_height="match_parent"
+				    android:background="@color/white" />
+		 
+		    </LinearLayout>
+		    <View
+		    android:id="@+id/separator"
+		    android:layout_width="1dp"
+		    android:layout_height="match_parent"
+		    android:background="@android:color/darker_gray"/>
+
+		    <LinearLayout
+		        android:id="@+id/dropLayout"
+		        android:layout_width="0dp"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1"
+		        android:orientation="vertical" >
+		
+		        <TextView
+		            android:id="@+id/dropText"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:padding="10dp"
+		            android:textColor="@color/orange"
+		            android:textSize="16sp"
+		            android:textStyle="bold" />
+		        <TextView
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	   
+	    android:id="@+id/blip"/>
+
+		    </LinearLayout>
+	   </LinearLayout>
+</LinearLayout>

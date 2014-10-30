@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Easy File Share</string>
+    <string name="menu_settings">Settings</string>
+    <string name="go_up">Go one level up</string>
+    <string name="teacher">Instructor</string>
+    <string name="student">Student</string>
+    <string name="user">User</string>
+    <string name="select_user">Select User Type</string>
+    <string name="proceed">Proceed</string>
+    <string name="fileshare">FileShare</string>
+    <string name="change_ip">Change Server IP</string>
+    <string name="image">Image</string>
+    <string name="enter_server_ip">Enter Server IP</string>
+    <string name="enter_server_port">Enter Server Port</string>
+    <string name="connect">Connect</string>
+    <string name="reload">Reload</string>
+    <string name="view_ip">View my IP Address</string>
+	
+    <integer name="CONST_SERVER_PORT">8080</integer>
+    <integer name="CONST_CLIENT_PORT">8000</integer>
+    <integer name="CONST_STUDENT">1</integer>
+    <integer name="CONST_TEACHER">2</integer>
+    <integer name="CONST_CONNECTING">3</integer>
+    <integer name="CONST_ACK">4</integer>
+
+    <color name="white">#ffffff</color>
+    <color name="green">#3D9140</color>
+    <color name="banner">#DC8909</color>
+    <color name="proceedBlue">#659D32</color>
+    <color name="orange">#FBB917</color>
+    <color name="blue">#56A5EC</color>
+
+    <string name="title_activity_select_server">Server IP</string>
+
+</resources>
